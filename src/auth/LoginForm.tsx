@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 import { FcGoogle } from "react-icons/fc";
 import Button from "../components/Button";
 import Or from "../components/Or";
@@ -7,15 +7,14 @@ import { Link } from "react-router-dom";
 const LoginForm = () => {
   return (
     <>
-      {/* main container  */}
       <div>
         {/* Flex Container */}
 
-        <div className="flex items-center justify-center p-5">
+        <div className="flex items-center justify-start">
           {/* Feedback  */}
 
           {/* Form  */}
-          <div className="w-1/2 px-10 mr-32  space-y-6">
+          <form className="space-y-6">
             <img src={logo} alt="Logo" />
 
             <div>
@@ -65,7 +64,7 @@ const LoginForm = () => {
               <p className="text-center">
                 Don't have an account yet?{" "}
                 <Link
-                  to="signup"
+                  to="/signup"
                   className="text-[#652DBF] hover:text-[#652DBA]"
                 >
                   Sign Up
@@ -77,7 +76,7 @@ const LoginForm = () => {
             <button className="w-full flex items-center justify-center  border-2 border-black rounded-lg py-3">
               <FcGoogle className="text-xl mr-2" /> Continue with Google
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </>

@@ -8,8 +8,8 @@ const AuthLayout = () => {
       {isAuth ? (
         <Navigate to="/" />
       ) : (
-        <div className="w-full flex flex-row-reverse p-10">
-          <section className="flex border flex-col justify-center items-center ">
+        <div className="w-full flex flex-row-reverse p-10  gap-10">
+          <section className="w-1/2 flex flex-col justify-center items-start ">
             <Outlet />
           </section>
           <AuthSideBar />
