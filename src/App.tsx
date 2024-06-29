@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Routes>
         <Route element={<AuthLayout />}>
-          <Route path="/login" element={<LoginForm />} />
+          <Route index path="/" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpForm />} />
         </Route>
       </Routes>
